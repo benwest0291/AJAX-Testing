@@ -7,22 +7,26 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Movies Ajax</title>
+  <title>Basic Netflix Clone</title>
 </head>
 <body>
-  <div class="banner" style="">
+  <div class="nav">
+  <h1 class="logo">Netflix 📺</h1>
+  <h5 class="login">Log In</h5>
+  </div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);">
   <div class="">
     <h1>Search Bens Basic Netflix Clone 📺</h1>
-      <form id="search-movies" class="form-inline">
+    <form id="search-movies" class="form-inline">
     <input id="keyword" type="text" class="form-control ml-auto mr-2" placeholder="Find movies">
     <input type="submit" class="btn btn-warning mr-auto ml-2" value="Search">
     </form>
   </div>
 </div>
   <div class="container text-center">
-    <h2> Search Results Will Appear Bellow ⬇</h2>
+    <h2 class="search"> Search Results Will Appear Bellow ⬇</h2>
   <ul id="results" class="list-inline"></ul>
-</div>
+
 <div class="footer">
       <div class="footer-links">
         <a href="https://www.instagram.com/benwestwebdesignuk/"target="_blank"><i class="fab fa-instagram"></i></a>
@@ -32,8 +36,9 @@
         <a href="https://github.com/benwest0291" target="_blank"><i class="fab fa-github"></i></a>
       </div>
       <div class="footer-copyright">
-        <p class="footer-text">Bens Basic Netflix Clone</p></p>
+        <p class="footer-text">Search Bens Basic Netflix Clone</p></p>
       <p class="footer-text"></p>Ben West Web Design @2021 All Rights Reserved</p>
+      </div>
     </div>
   </div>
 <script src="./app.js"></script>

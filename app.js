@@ -18,10 +18,10 @@ const searchMovies = (query) => {
 const form = document.querySelector("#search-movies");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // <-- to prevent <form>'s native behaviour
+  event.preventDefault(); // <-- to prevent <form>'s native behaviour of refreshing after submit
   const input = event.currentTarget.querySelector(".form-control");
   results.innerHTML = "";
   searchMovies(input.value);
 });
 
-searchMovies("harry potter");
+searchMovies("movie");
