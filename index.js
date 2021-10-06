@@ -1,8 +1,11 @@
-import Sortable from "sortablejs";
-
-
+// import Sortable from "sortablejs";
+import { fetchMovies, updateResultsList } from "./movies";
+import { initSortable } from "./plugins/init_sortable";
 // Grabbing hold of the id of results
 const results = document.querySelector("#results");
+
+// grabbing the main form id
+const form = document.querySelector("#search-movies");
 
 // funtion called searchMovies that can be called
 // grabbing api and itoration and displaying on DOM
@@ -21,8 +24,7 @@ const searchMovies = (query) => {
     });
 };
 
-// grabbing the main form id
-const form = document.querySelector("#search-movies");
+
 // adding a event listener of submit
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // <-- to prevent <form>'s natral behaviour of refreshing after submit
@@ -31,6 +33,13 @@ form.addEventListener("submit", (event) => {
   searchMovies(input.value); // <-- calling search movies and giving it an arguement of input value
 });
 
-
 // Calling searchMovie Function and displaying name of movie as default
 searchMovies("movie");
+
+
+// Trying to add sortable
+
+// const initSortable = () =>{
+//   const list = document.querySelector("#results")
+//   Sortable.create(list)
+// }
