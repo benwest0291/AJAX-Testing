@@ -1,0 +1,27 @@
+{
+  "name": "ajax-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benwest0291/AJAX-Testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benwest0291/AJAX-Testing/issues"
+  },
+  "homepage": "https://github.com/benwest0291/AJAX-Testing#readme",
+  "devDependencies": {
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "sortablejs": "^1.14.0"
+  }
+}

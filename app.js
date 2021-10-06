@@ -1,3 +1,6 @@
+import Sortable from "sortablejs";
+
+
 // Grabbing hold of the id of results
 const results = document.querySelector("#results");
 
