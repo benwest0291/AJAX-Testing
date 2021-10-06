@@ -7,7 +7,7 @@ const searchMovies = (query) => {
       data.Search.forEach((result) => {
         const movie = `<li class="list-inline-item">
           <img src="${result.Poster}" alt="">
-          <p>${result.Title}</p>
+          <h4>${result.Title}</h4>
         </li>`;
         results.insertAdjacentHTML("beforeend", movie);
       });
