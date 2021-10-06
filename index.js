@@ -1,6 +1,3 @@
-// import Sortable from "sortablejs";
-import { fetchMovies, updateResultsList } from "./movies";
-import { initSortable } from "./plugins/init_sortable";
 // Grabbing hold of the id of results
 const results = document.querySelector("#results");
 
@@ -35,11 +32,3 @@ form.addEventListener("submit", (event) => {
 
 // Calling searchMovie Function and displaying name of movie as default
 searchMovies("movie");
-
-
-// Trying to add sortable
-
-// const initSortable = () =>{
-//   const list = document.querySelector("#results")
-//   Sortable.create(list)
-// }
