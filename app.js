@@ -23,3 +23,5 @@ form.addEventListener("submit", (event) => {
   results.innerHTML = "";
   searchMovies(input.value);
 });
+
+searchMovies("harry potter");
